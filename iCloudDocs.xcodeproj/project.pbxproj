@@ -22,6 +22,7 @@
 		87D36A751E75C12A00194A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D36A781E75C12A00194A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87D36A7A1E75C12A00194A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D36A801E75C14E00194A9F /* iCloudDocs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCloudDocs.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		87D36A6D1E75C12A00194A9F /* iCloudDocs */ = {
 			isa = PBXGroup;
 			children = (
+				87D36A801E75C14E00194A9F /* iCloudDocs.entitlements */,
 				87D36A6E1E75C12A00194A9F /* AppDelegate.swift */,
 				87D36A701E75C12A00194A9F /* ViewController.swift */,
 				87D36A721E75C12A00194A9F /* Main.storyboard */,
@@ -98,6 +100,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 43ZU6ZW5A6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -259,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iCloudDocs/iCloudDocs.entitlements;
 				DEVELOPMENT_TEAM = 43ZU6ZW5A6;
 				INFOPLIST_FILE = iCloudDocs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -272,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iCloudDocs/iCloudDocs.entitlements;
 				DEVELOPMENT_TEAM = 43ZU6ZW5A6;
 				INFOPLIST_FILE = iCloudDocs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

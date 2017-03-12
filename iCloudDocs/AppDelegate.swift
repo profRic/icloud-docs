@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  iCloudDocs
 //
-//  Created by Ric Telford on 3/12/17.
 //  Copyright © 2017 telfordventures. All rights reserved.
 //
 
